@@ -6,7 +6,7 @@ namespace PatikaC101
     {
         static void Main(string[] args)
         {
-            PatikaC101.LoopsWhileForeach.WhileFoeach();
+            PatikaC101.Arrays.Array1();
         }
     }
 }
