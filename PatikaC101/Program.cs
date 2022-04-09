@@ -6,7 +6,7 @@ namespace PatikaC101
     {
         static void Main(string[] args)
         {
-            PatikaC101.Arrays.Array1();
+            PatikaC101.Arrays.ArrayMethods();
         }
     }
 }

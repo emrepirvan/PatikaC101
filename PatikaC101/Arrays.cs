@@ -46,5 +46,56 @@ namespace PatikaC101
             }
             Console.WriteLine("average of numbers : {0}", total / arraylength);
         }
+        public static void ArrayMethods()
+        {
+            //Array methods
+
+            //Sort   (sıralama)
+            int[] numbers = { 5, 40, 43, 12, 65, 23, 54 };
+            Console.WriteLine("**Unsorted numbers Array**");
+            foreach (var item in numbers)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("*Sorted numbers Array*");
+            Array.Sort(numbers);
+
+            foreach (var item in numbers)
+            {
+                Console.WriteLine(item);
+            }
+            //------------------------------------------------
+            //CLEAR
+            //Clear Verdiğimiz bir indexten başlayarak verdiğimiz eleman sayısı kadarını sıfırlıyor.
+
+            Console.WriteLine("****CLEAR*****");
+            Array.Clear(numbers, 2, 3);
+            foreach (var item in numbers)   // ikinciden başlayarak 3 adet elamanı sıfırladık.
+            { Console.WriteLine(item); }
+
+            //------------------------------------------------
+
+            //REVERSE
+            // diziyi aynalıyor. sıralaması ters dönüyor
+            Console.WriteLine("****REVERSE*****");
+            Array.Reverse(numbers);
+            foreach (var item in numbers)   // sıralamayı tersine çevirdik
+            { Console.WriteLine(item); }
+
+            //------------------------------------------------
+            // verdiğiniz elemanın indexini döner, yani bulundugu yeri
+            //IndexOf
+
+            Console.WriteLine("****INDEXOF*****");
+            Console.WriteLine(Array.IndexOf(numbers, 12));   /// 12 nin index'ini verdi.
+
+            //------------------------------------------------
+            //RESIZE 
+            Console.WriteLine("****RESIZE*****");
+            Array.Resize<int>(ref numbers, 9);  // 7 elemanlı dizimiz vardı 9 elemana çıkardık
+            numbers[8] = 99;            //8. indexteki elemana 99 atadık
+            foreach (var item in numbers)
+            { Console.WriteLine(item); }
+        }
     }
 }
