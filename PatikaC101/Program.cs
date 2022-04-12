@@ -6,7 +6,8 @@ namespace PatikaC101
     {
         static void Main(string[] args)
         {
-            PatikaC101.Arrays.ArrayMethods();
+           MetotlarDersi ornek = new MetotlarDersi();
+            Console.WriteLine(ornek.ArttırVeTopla(25,36));
         }
     }
 }
