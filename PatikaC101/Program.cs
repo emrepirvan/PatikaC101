@@ -6,8 +6,11 @@ namespace PatikaC101
     {
         static void Main(string[] args)
         {
-           MetotlarDersi ornek = new MetotlarDersi();
-            Console.WriteLine(ornek.ArttırVeTopla(25,36));
+            Overloading emre = new Overloading();
+            emre.Topla(15, 25, out int sonuc);
+            emre.EkranaYazdir(123,35);
+
+
         }
     }
 }
