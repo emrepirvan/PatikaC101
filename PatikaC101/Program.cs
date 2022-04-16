@@ -6,7 +6,7 @@ namespace PatikaC101
     {
         static void Main(string[] args)
         {
-            PatikaC101.AlgorithmQuestions1.CountingWords();
+            PatikaC101.HazirMetotlar.StringMetotlar();
         }
     }
 }

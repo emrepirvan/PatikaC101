@@ -64,7 +64,7 @@ namespace PatikaC101
                  Console.Write(" {0} ", dizi[i]);
             }
         }
-        public static void CountingWords()
+        public static void CountingWords( )
         {
 
             Console.WriteLine("Bir cumle giriniz");
