@@ -52,12 +52,113 @@ namespace PatikaC101
             Console.WriteLine(degisken.Replace("Csharp", "C#"));// ilk verdiğimiz değerle ikincisini yer degistirir
             Console.WriteLine(degisken.Replace(" ", "*"));// ilk verdiğimiz değerle ikincisini yer degistirir
 
-
+            Console.WriteLine("-----------------------------------------");
             Console.WriteLine(degisken.Split(' ')[1]); // Boşluk olan yerlerden parçala 1. elemanı getir
-
+            Console.WriteLine("-----------------------------------------");
 
             Console.WriteLine(degisken.Substring(4));  // 4. İNDEXten başlayarak sonuna kadar getir
             Console.WriteLine(degisken.Substring(4, 6));  // 4. İNDEXten başlayarak sonuna kadar getir
+        }
+
+        public static void HackerRankTest()
+        {
+            int n = int.Parse(Console.ReadLine());
+            string ifade;
+            for (int i = 0; i < n; i++)
+            {
+                ifade = Console.ReadLine();
+
+                EvenOddString(ifade);
+            }
+        }
+        public static void EvenOddString(string ifade)
+        {
+            string evenStr = "";
+            string oddStr = "";
+            for (int i = 0; i < ifade.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    evenStr += ifade[i];
+                }
+                else if (i % 2 == 1)
+                {
+                    oddStr += ifade[i];
+                }
+            }
+            Console.WriteLine(evenStr + " " + oddStr);
+
+        }
+
+        public static void DateTimeMetotlar()
+        {
+            Console.WriteLine(DateTime.Now);  //Günün tarihini getirir
+            Console.WriteLine(DateTime.Now.Date);
+            Console.WriteLine(DateTime.Now.Day);
+            Console.WriteLine(DateTime.Now.Month);
+            Console.WriteLine(DateTime.Now.Year);
+            Console.WriteLine(DateTime.Now.Hour);
+            Console.WriteLine(DateTime.Now.Minute);
+            Console.WriteLine(DateTime.Now.Second);
+            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine(DateTime.Now.DayOfWeek);
+            Console.WriteLine(DateTime.Now.DayOfYear);
+            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine(DateTime.Now.ToLongDateString());
+            Console.WriteLine(DateTime.Now.ToShortDateString());
+            Console.WriteLine("-------------------------------------------");
+
+            Console.WriteLine(DateTime.Now.ToShortTimeString());
+            Console.WriteLine(DateTime.Now.ToLongTimeString());
+            Console.WriteLine("-------------------------------------------");
+
+            Console.WriteLine(DateTime.Now.AddDays(2));
+            Console.WriteLine(DateTime.Now.AddHours(3));
+            Console.WriteLine(DateTime.Now.AddSeconds(30));
+            Console.WriteLine(DateTime.Now.AddMonths(1));
+            Console.WriteLine(DateTime.Now.AddYears(4));
+            Console.WriteLine(DateTime.Now.AddMilliseconds(5000));
+
+
+            ///date time format
+            Console.WriteLine(DateTime.Now.ToString("dd")); ///16
+            Console.WriteLine(DateTime.Now.ToString("ddd")); ///sat
+            Console.WriteLine(DateTime.Now.ToString("dddd")); ///saturday
+            Console.WriteLine(DateTime.Now.ToString("MM")); ///04
+            Console.WriteLine(DateTime.Now.ToString("MMM")); ///APR
+            Console.WriteLine(DateTime.Now.ToString("MMMM")); ///April
+            Console.WriteLine(DateTime.Now.ToString("yy")); ///22
+            Console.WriteLine(DateTime.Now.ToString("yyy")); ///2022
+        }
+
+        public static void MathMetotlar()
+        {
+            Console.WriteLine(Math.Abs(-25)); //25
+
+            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine(Math.Sin(10));
+            Console.WriteLine(Math.Cos(10));
+            Console.WriteLine(Math.Tan(10));
+
+            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine(Math.Ceiling(2.5)); //3    yukarıya yuvarlar
+            Console.WriteLine(Math.Round(2.4)); //2     En yakına yuvarlar
+            Console.WriteLine(Math.Round(2.7)); //2     En yakına yuvarlar  
+            Console.WriteLine(Math.Floor(2.9)); //2     Aşağıya yuvarlar
+            Console.WriteLine("-------------------------------------------");
+
+            Console.WriteLine(Math.Max(2,4));
+            Console.WriteLine(Math.Min(2, 4));
+            Console.WriteLine("-------------------------------------------");
+
+            Console.WriteLine(Math.Pow(2, 3));  // üs alma
+            Console.WriteLine(Math.Sqrt(2));   // karakök alır
+            Console.WriteLine(Math.Log(2));   // Logaritma  e tabanında 2 nin karşılığı
+            Console.WriteLine(Math.Exp(3));   // e üzeri 3
+            Console.WriteLine(Math.Log10(10));   // Logaritma 10 tabanında 10 karşılığı
+
+
+            Console.WriteLine("-------------------------------------------");
         }
     }
 }
