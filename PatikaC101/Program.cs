@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Collections.Generic;
 
 namespace PatikaC101
 {
@@ -6,7 +8,7 @@ namespace PatikaC101
     {
         static void Main(string[] args)
         {
-            PatikaC101.HazirMetotlar.MathMetotlar();
+            PatikaC101.ArrayListLesson.Alistirma();
         }
     }
 }

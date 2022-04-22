@@ -42,6 +42,13 @@ namespace PatikaC101
 
             Console.WriteLine(neg + "  " + poz + "  " + zero);
         }
-            
+        public static string hesaplama(int n, int p)
+        {
+            if (n < 0 || p < 0)
+            {
+                return "n and p should be non-negative";
+            }
+            return "n and p should be non-negative";
+        }
     }
 }

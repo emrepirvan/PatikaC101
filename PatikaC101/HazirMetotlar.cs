@@ -89,9 +89,23 @@ namespace PatikaC101
             Console.WriteLine(evenStr + " " + oddStr);
 
         }
+        public static string timeConversion(string s)
+        {
+            bool succesfullConversion = DateTime.TryParse(s, out DateTime time);
+            if (succesfullConversion)
+            {
+                return time.ToString("HH:mm:ss");
+            }
+            else
+            {
+                return "nonconversional value";
+            };
+
+        }
 
         public static void DateTimeMetotlar()
         {
+            Console.WriteLine(DateTime.Now.ToString("HH:mm:ss"));   // 24 saat şeklinde getirir
             Console.WriteLine(DateTime.Now);  //Günün tarihini getirir
             Console.WriteLine(DateTime.Now.Date);
             Console.WriteLine(DateTime.Now.Day);
@@ -131,6 +145,7 @@ namespace PatikaC101
             Console.WriteLine(DateTime.Now.ToString("yyy")); ///2022
         }
 
+
         public static void MathMetotlar()
         {
             Console.WriteLine(Math.Abs(-25)); //25
@@ -153,7 +168,7 @@ namespace PatikaC101
 
             Console.WriteLine(Math.Pow(2, 3));  // üs alma
             Console.WriteLine(Math.Sqrt(2));   // karakök alır
-            Console.WriteLine(Math.Log(2));   // Logaritma  e tabanında 2 nin karşılığı
+            Console.WriteLine(Math.Log(2));   // Logaritma  e tabanında 2 nin karşılığı 
             Console.WriteLine(Math.Exp(3));   // e üzeri 3
             Console.WriteLine(Math.Log10(10));   // Logaritma 10 tabanında 10 karşılığı
 
