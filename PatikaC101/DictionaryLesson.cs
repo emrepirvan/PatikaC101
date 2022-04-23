@@ -45,6 +45,32 @@ namespace PatikaC101
             {
                 Console.WriteLine("Keys " +item.Key); //Sadece keyler yazdırıcak
             }
+        }
+        public static void TelRehber()
+        {
+            int n = int .Parse(Console.ReadLine());
+            Dictionary<string, string> phoneNum = new Dictionary<string, string>();
+
+            for (int i = 0; i < n; i++)
+            {
+                string[] eleman = Console.ReadLine().Split(' ');
+                string name = eleman[0];
+                string phone = eleman[1];
+
+                phoneNum.Add(name, phone);
+            }
+            string searchName = "";
+            while ((searchName = Console.ReadLine()) != null)
+            {
+                if (phoneNum.ContainsKey(searchName))
+                {
+                    Console.WriteLine(searchName + "=" + phoneNum[searchName]);
+                }
+                else
+                {
+                    Console.WriteLine("Not found");
+                }
+            }
 
         }
     }
