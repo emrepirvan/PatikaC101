@@ -8,7 +8,8 @@ namespace PatikaC101
     {
         static void Main(string[] args)
         {
-            PatikaC101.Collections_Question_3.Cozum2();
+            PatikaC101.ClassLesson.calisma();
         }
+
     }
 }
