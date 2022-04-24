@@ -85,7 +85,7 @@ namespace PatikaC101
             {
                 Sinif += 1;
             }
-            public void SinifDusur() //Propertyi burada kullan  _sinif'i DEGİL!!!!!!
+            public void SinifDusur() //Propertyi burada kullan, field'ı (_sinif'i) DEGİL!!!!!!
             {
                 this.Sinif = this.Sinif - 1;
             }
