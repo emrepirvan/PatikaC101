@@ -8,7 +8,7 @@ namespace PatikaC101
     {
         static void Main(string[] args)
         {
-            PatikaC101.ClassLesson.calisma();
+            PatikaC101.Encapsulation_PropertyLesson.Calisma();
         }
 
     }
