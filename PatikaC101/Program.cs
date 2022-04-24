@@ -8,8 +8,7 @@ namespace PatikaC101
     {
         static void Main(string[] args)
         {
-            StaticLesson.Ders();
+            PatikaC101.EnumLesson.Cozum();
         }
-
     }
 }
