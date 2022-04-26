@@ -42,4 +42,8 @@ namespace PatikaC101
             cokSıcak =30
         }
     }
+    public static class sınıf
+    {
+
+    }
 }

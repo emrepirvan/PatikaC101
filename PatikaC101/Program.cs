@@ -6,9 +6,9 @@ namespace PatikaC101
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            PatikaC101.EnumLesson.Cozum();
+            PatikaC101.InterfaceLessonExample.Example.Cozum();
         }
     }
 }

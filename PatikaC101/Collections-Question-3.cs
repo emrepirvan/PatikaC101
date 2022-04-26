@@ -25,6 +25,8 @@ namespace PatikaC101
         }
         public static void Cozum2()
         {
+
+
             string sesliharf1 = "";
             string cumle2 = Console.ReadLine().ToString();
             char[] sesliHarfler = { 'a', 'e', 'ı', 'i', 'o', 'u', 'ü', 'ö' };

@@ -24,7 +24,7 @@ namespace PatikaC101
             Console.WriteLine("Class Alan Hesabı : {0}", dikdortgen_Struct.AlanHesap());
             Console.WriteLine("Class Alan Hesabı : {0}", dikdortgen_Struct1.AlanHesap());
         }
-        class Dikdortgen //adı stack'te tutulur, verileri ise Heaptedir. Heap'teki verilerin bulunduğu adresi işaret eder
+        class Dikdortgen  //adı stack'te tutulur, verileri ise Heaptedir. Heap'teki verilerin bulunduğu adresi işaret eder
         {
             public int KısaKenar, UzunKenar;
             public long AlanHesap()
@@ -38,7 +38,7 @@ namespace PatikaC101
             }
 
         }
-        struct Dikdortgen_struct //Belleğin stack bölgesinde tutulur
+        struct Dikdortgen_struct  //Belleğin stack bölgesinde tutulur
         {
             public Dikdortgen_struct(int kisa, int uzun)
             {
