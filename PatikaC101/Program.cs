@@ -8,7 +8,7 @@ namespace PatikaC101
     {
         static void Main()
         {
-            PatikaC101.InterfaceLessonExample.Example.Cozum();
+            PatikaC101.DictionaryLesson.Alistirmalar();
         }
     }
 }
